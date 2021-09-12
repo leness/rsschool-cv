@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+h2 {
+    padding-left: 40px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+li {
+   
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 100px;
+}
+
+
+.header__flex {
+    background: #DDA0DD;
+    display: flex;
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 300px;
+}
+
+.name {
+    margin-top: 50px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about__me {
+   padding-right: 20px;
+}
+
+.aside {
+    align-items: center;
+    flex-direction: column;
+    width: 265px;
+    padding-top: 20px;
+    background-color: #D8BFD8;
+}
+
+.main {
+    height: 100%;
+    background-color: #9370DB;
+}
+
+.code {
+    margin-left: 30px;
+    background-color: #E6E6FA;
+}
+
+.main__code {
+    margin-top: 0;
+    padding-top: 35px;
+}
+
+.contacts__link {
+    display: block;
+    text-decoration: none;
+    color:black ;
+}
+
+.language {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+.side {
+   
+    display: flex;
+}
+
+.education__style {
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.footer__bg {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #483D8B;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
