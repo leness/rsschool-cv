@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <link rel="stylesheet" href="./style.css" />
     <title>CV</title>
   </head>
@@ -12,6 +20,9 @@
       <div class="wrapper">
         <nav class="nav">
           <ul class="nav__list">
+            <li class="nav__list_item">
+              <a class="nav__link" href="#Contacts">Contacts</a>
+            </li>
             <li class="nav__list_item">
               <a class="nav__link" href="#CodeExample">Code Example</a>
             </li>
@@ -23,6 +34,7 @@
             </li>
           </ul>
         </nav>
+        <button>btn</button>
         <div class="header__flex">
           <figure>
             <img class="avatar" src="./images/foto.jpg" alt="avatar" />
@@ -44,7 +56,7 @@
         <div class="side">
           <div>
             <aside class="aside">
-              <h2>CONTACTS</h2>
+              <h2 id="Contacts">CONTACTS</h2>
               <ul>
                 <li>
                   <a class="contacts__link" href="tel:+380671637025"
@@ -85,7 +97,7 @@
                 <li>Decision-making</li>
               </ul>
               <h2>LANGUAGE SKILLS</h2>
-              <ul class="language">
+              <ul>
                 <li>Ukrainian - native</li>
                 <li>Russian - native</li>
                 <li>A2 (B1 in process...)</li>
