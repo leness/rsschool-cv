@@ -4,35 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/color-brewer.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
     <link rel="stylesheet" href="./style.css" />
     <title>CV</title>
   </head>
   <body>
     <header class="header">
       <div class="wrapper">
-        <div class="header__flex">
-          <figure>
-            <img class="avatar" src="./images/foto.jpg" alt="avatar" />
-          </figure>
-          <div>
-            <h1 class="name">OLENA STADNYK</h1>
-            <h2>Junior Front-End developer</h2>
-            <p>
-              I am beginner Front End developer and I am very interested in
-              groving in this direcnion
-            </p>
-          </div>
+        <div class="header__wrapper">
+          <input type="checkbox" id="check__menu" />
+          <label class="label" for="check__menu"></label>
+          <div class="burger__line first"></div>
+          <div class="burger__line second"></div>
+          <div class="burger__line third"></div>
+          <div class="burger__line fourth"></div>
+          <nav class="menu">
+            <ul class="nav__list">
+              <li class="nav__list_item">
+                <a class="nav__link_burger nav__link" href="#Contacts"
+                  >Contacts</a
+                >
+              </li>
+              <li class="nav__list_item">
+                <a class="nav__link_burger nav__link" href="#CodeExample"
+                  >Code Example</a
+                >
+              </li>
+              <li class="nav__list_item">
+                <a class="nav__link_burger nav__link" href="#Education"
+                  >Education</a
+                >
+              </li>
+              <li class="nav__list_item">
+                <a class="nav__link_burger nav__link" href="#MyProjects"
+                  >My projects</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <div class="wrapper">
       <main class="main">
+
+        <div class="header__flex">
+          <figure>
+            <img class="avatar" src="./images/foto.jpg" alt="avatar" />
+          </figure>
+
+
+          <div class="header__info">
+            <h1 class="name">OLENA STADNYK</h1>
+            <h2 class="header__title">Junior Front-End developer</h2>
+            <p class="header__text">
+              I am beginner Front End developer <br />
+              and I am very interested in growing in this direction
+            </p>
+          </div>
+        </div>
         <div class="side">
           <div>
             <aside class="aside">
-              <h2>CONTACTS</h2>
+              <h2 id="Contacts">CONTACTS</h2>
               <ul>
-                <li></li>
+
                 <li>
                   <a class="contacts__link" href="tel:+380671637025"
                     >+38 (067) 163-70-25</a
@@ -72,7 +116,8 @@
                 <li>Decision-making</li>
               </ul>
               <h2>LANGUAGE SKILLS</h2>
-              <ul class="language">
+
+              <ul>
                 <li>Ukrainian - native</li>
                 <li>Russian - native</li>
                 <li>A2 (B1 in process...)</li>
@@ -80,23 +125,24 @@
             </aside>
           </div>
           <div>
-            <h2>Code Example</h2>
+            
+            <h2 id="CodeExample">Code Example</h2>
             <pre class="code">
-            <code>
-              function howManydays(month){
-               switch (month){
-                  case 2: return 28 
-                  case 4: 
-                  case 6: 
-                  case 9: 
-                  case 11: return 30 
-                } 
-                return 31 
-              }
+  <code>
+    function howManydays(month){
+     switch (month){
+        case 2: return 28 
+        case 4: 
+        case 6: 
+        case 9: 
+        case 11: return 30 
+      } 
+      return 31 
+    }
             </code>
           </pre>
 
-            <h2>Education</h2>
+            <h2 id="Education">Education</h2>
 
             <div class="education__style">
               <p>
@@ -116,6 +162,21 @@
                 <i>Septermber 2001 - June 2006 |Ukraine</i>
               </p>
             </div>
+
+            <h2 id="MyProjects">My projects</h2>
+            <a
+              class="projects__item"
+              href="https://irina-blazhevich.github.io/group-project-NEW/"
+            >
+              <img
+                class="projects__image"
+                src="./images/Screenshot.png"
+                alt="projects__image"
+              />
+              group-project-NEW [ HTML5 - CSS3 - SASS – BEM ] <br />
+              Layout for the site 'Hellen hellish English'
+            </a>
+
           </div>
         </div>
       </main>
@@ -130,7 +191,9 @@
               alt="GitHub_logo"
             />
           </a>
-          <p>&COPY;2021</p>
+
+          <p>2021&COPY; by Olena Stadnyk</p>
+
           <a href="https://rs.school/js/">
             <img src="./images/rsschool__logo.svg" width="86" alt="RS School" />
           </a>
