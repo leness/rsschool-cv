@@ -24,24 +24,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-@media (min-width: 1024px) {
-  #check__menu{
-    display: none;
-}  
-
-.nav__link {
-    display: none;
-}
-
-.nav__list_item {
-    list-style: none;
-}
-}
-
 @media (max-width: 1024px) {
-
-
-    
     #check__menu{
     display: none;
 }
