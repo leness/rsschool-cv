@@ -24,8 +24,6 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-@media (max-width: 1024px) {
     #check__menu{
     display: none;
 }
@@ -113,7 +111,6 @@ p {
     size: inherit;
     padding-left: 10px;
     padding-right: 10px;
-}
 }
 
 @media (max-width: 767px) {
