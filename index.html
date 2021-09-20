@@ -6,19 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/color-brewer.min.css"
     />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
     <script>
       hljs.initHighlightingOnLoad();
     </script>
+
     <link rel="stylesheet" href="./style.css" />
     <title>CV</title>
   </head>
   <body>
     <header class="header">
-      <div class="wrapper">
-        <nav class="nav">
+      <div class="header__wrapper">
+        <input type="checkbox" id="check__menu" />
+        <label class="label" for="check__menu"></label>
+        <div class="burger__line first"></div>
+        <div class="burger__line second"></div>
+        <div class="burger__line third"></div>
+        <div class="burger__line fourth"></div>
+        <nav class="menu">
+          <a class="nav__link_burger" href="#Contacts">Contacts</a>
+          <a class="nav__link_burger" href="#CodeExample">Code Example</a>
+          <a class="nav__link_burger" href="#Education">Education</a>
+          <a class="nav__link_burger" href="#MyProjects">My projects</a>
+        </nav>
+        <!-- <nav class="nav">
           <ul class="nav__list">
             <li class="nav__list_item">
               <a class="nav__link" href="#Contacts">Contacts</a>
@@ -33,8 +46,11 @@
               <a class="nav__link" href="#MyProjects">My projects</a>
             </li>
           </ul>
-        </nav>
-        <button>btn</button>
+        </nav> -->
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="main">
         <div class="header__flex">
           <figure>
             <img class="avatar" src="./images/foto.jpg" alt="avatar" />
@@ -49,10 +65,6 @@
             </p>
           </div>
         </div>
-      </div>
-    </header>
-    <div class="wrapper">
-      <main class="main">
         <div class="side">
           <div>
             <aside class="aside">
