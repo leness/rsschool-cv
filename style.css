@@ -17,12 +17,13 @@ h2 {
 li {
    
     font-family: 'Open Sans', sans-serif;
-    list-style: circle;
+    list-style: circle;  
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
 }
+
 
 @media (max-width: 1024px) {
     #check__menu{
@@ -58,6 +59,7 @@ p {
     background: #DDA0DD;
     display: flex;
 }
+
 .avatar {
     border-radius: 50%;
     height: 300px;
@@ -69,13 +71,14 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .header__text {
     text-align: end;
 }
-
 .about__me {
    padding-right: 20px;
 }
+
 
 .side {
     display: flex;
@@ -312,6 +315,7 @@ figure {
 .main {
     height: 100%;
     background-color: #9370DB;
+
 }
 
 .main__code {
